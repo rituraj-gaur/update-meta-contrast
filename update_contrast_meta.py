@@ -24,11 +24,14 @@ def getSquad(org_id, app_id):
 
     # extracting data in json format
     data_squad = r_squad.json()
-    curr_squad = (data_squad['application']["metadataEntities"][0]["fieldValue"])
+    try:
+        curr_squad = (data_squad['application']["metadataEntities"][0]["fieldValue"])
+        print('Current squad value :' + curr_squad)
+    except IndexError as e:
+        print('Current squad value : NULL')
     # print(data_squad)
     app_name = data_squad["application"]['name']
     print('Application Name : ' + app_name)
-    print('Current squad value :' + curr_squad)
     return app_name
 
 
