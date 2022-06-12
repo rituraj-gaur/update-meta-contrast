@@ -1,3 +1,5 @@
+#Use this program to update the meta-data for a given application(s)
+
 import requests
 import json
 import sys
