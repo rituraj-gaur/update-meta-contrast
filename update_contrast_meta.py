@@ -3,7 +3,7 @@ import json
 import sys
 
 app_id = input('Enter Application ID : ')
-org_id = '37af5304-1039-4d76-b610-f3bb7f8126b8'
+org_id = <YOUR ORG ID HERE>
 auth = '#############'     # Replace this Auth token
 API = '##############'   # Replace this with API-key
 
